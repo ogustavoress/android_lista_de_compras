@@ -14,6 +14,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.recyclerview.widget.RecyclerView
 import ogustavoress.com.github.androidlistadecompras.ui.theme.AndroidListaDeComprasTheme
 
 class MainActivity : AppCompatActivity() {
@@ -25,5 +26,9 @@ class MainActivity : AppCompatActivity() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         supportActionBar?.title = "Lista de Compras"
+
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        val itemsAdapter = ItemsAdapter()
+        recyclerView.adapter = itemsAdapter
     }
 }
