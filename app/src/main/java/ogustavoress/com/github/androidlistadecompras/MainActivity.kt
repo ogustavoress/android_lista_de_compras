@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
+    //Para manter o Adapter acessível
+    private lateinit var adapter: ItemAdapter
 
     //Lista de Teste para preencher a RecyclerView
     private val listaDeCompras = mutableListOf(
