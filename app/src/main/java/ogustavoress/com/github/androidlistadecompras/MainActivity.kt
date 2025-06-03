@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 class MainActivity : AppCompatActivity() {
 
     //Lista de Teste para preencher a RecyclerView
-    private val listaDeCompras = listOf(
+    private val listaDeCompras = mutableListOf(
         ItemCompra("Arroz", 2),
         ItemCompra("Feijão", 1),
         ItemCompra("Macarrão", 3),
